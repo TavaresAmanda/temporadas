@@ -73,7 +73,7 @@ $(window).load(
   <div class="container_12">
     <div class="grid_12">
       <div class="h_phone">Alguma ajuda? Ligue para (83) 81014213</div>
-      <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+      <h1><a href="index.php"><img src="images/logo.png" alt=""></a></h1>
       <div class="clear"></div>
     </div>
     <div class="clear"></div>
@@ -81,13 +81,13 @@ $(window).load(
   <div class="menu_block">
     <div class="container_12">
       <div class="grid_12">
-        <div class="socials"><a href="login.html"></a><a href="login.html"></a></div>
+        <div class="socials"><a href="login.php"></a><a href="login.php"></a></div>
         <div class="autor">
-        <a href=login.html> Entrar </a> Social </div>
+        <a href="login.php"> Entrar </a> Social </div>
         <nav class="">
           <ul class="sf-menu">
-            <li class="current"><a href="index.html">Página Inicial</a></li>
-            <li><a href="services.html">Aluguel</a>
+            <li class="current"><a href="index.php">Página Inicial</a></li>
+            <li><a href="services.php">Aluguel</a>
               <ul>
                 <li><a href="#">Disponibilizar</a>
                   <ul>
@@ -100,7 +100,7 @@ $(window).load(
                 <li><a href="#">Remover</a></li>
               </ul>
             </li>
-            <li><a href="products.html">Procurar</a>
+            <li><a href="products.php">Procurar</a>
             <ul>
                 <li><a href="#">Casa</a>
                 <li><a href="#">Apartamento</a></li>
@@ -108,8 +108,8 @@ $(window).load(
               </ul>
             </li>
             </li>
-            <li><a href="blog.html">Painel de Controle</a></li>
-            <li><a href="contatos.html">Contatos</a></li>
+            <li><a href="blog.php">Painel de Controle</a></li>
+            <li><a href="contatos.php">Contatos</a></li>
           </ul>
         </nav>
         <div class="clear"></div>
@@ -212,7 +212,7 @@ $(window).load(
 <footer>
   <div class="container_12">
     <div class="grid_2">
-      <div class="copy"> <a href="index.html" class="footer_logo"><img src="images/footer_logo.png"	alt=""></a> &copy; 2014 <a href="#">Privacy Policy</a> </div>
+      <div class="copy"> <a href="index.php" class="footer_logo"><img src="images/footer_logo.png"	alt=""></a> &copy; 2014 <a href="#">Privacy Policy</a> </div>
     </div>
     <div class="grid_2">
       <ul>

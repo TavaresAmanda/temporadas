@@ -66,8 +66,13 @@
             <br>
             Amanda Renata Tavares Gomes
             <br>
+            Júlio Carvalho
             <br>
-            Jordan Lira de Araújo Junior</h2>
+            Jordan Lira de Araújo Junior
+            <br>
+            Júlio Carvalho
+            <br>
+            </h2>
         </div>
         <div class="clear"></div>
       </div>
