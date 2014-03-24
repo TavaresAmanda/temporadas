@@ -22,7 +22,7 @@
   <div class="container_12">
     <div class="grid_12">
       <div class="h_phone">Alguma ajuda? Ligue para (83) 81014213</div>
-      <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+      <h1><a href="index.php"><img src="images/logo.png" alt=""></a></h1>
       <div class="clear"></div>
     </div>
     <div class="clear"></div>
@@ -30,34 +30,35 @@
   <div class="menu_block">
     <div class="container_12">
       <div class="grid_12">
-        <div class="socials"><a href="login.html"></a><a href="login.html"></a></div>
-        <div class="autor"> <a href="login.html">Entrar</a> Social </div>
+        <div class="socials"><a href="login.php"></a><a href="login.php"></a></div>
+        <div class="autor">
+        <a href="login.php"> Entrar </a> Social </div>
         <nav class="">
           <ul class="sf-menu">
-            <li><a href="index.html">Página Inicial</a></li>
-            <li><a href="services.html">Aluguel</a>
+            <li class="current"><a href="index.php">Página Inicial</a></li>
+            <li><a href="services.php">Aluguel</a>
               <ul>
-                <li><a href="#">Disponibilizar</a>
+                <li><a href="disponibilizar.php">Disponibilizar</a>
                   <ul>
-                    <li><a href="#">Casa</a></li>
-                     <li><a href="#">Apartamento</a></li>
-                    <li><a href="#">Recurso</a></li>
+                    <li><a href="disponibilizar.php">Casa</a></li>
+                     <li><a href="disponibilizar.php">Apartamento</a></li>
+                    <li><a href="disponibilizar.php">Recurso</a></li>
                   </ul>
                 </li>
                 <li><a href="#">Editar</a></li>
                 <li><a href="#">Remover</a></li>
               </ul>
             </li>
-            <li><a href="products.html">Procurar</a>
+            <li><a href="procurar.php">Procurar</a>
             <ul>
-                <li><a href="#">Casa</a>
-                <li><a href="#">Apartamento</a></li>
-                <li><a href="#">Recurso</a></li>
+                <li><a href="procurar.php">Casa</a>
+                <li><a href="procurar.php">Apartamento</a></li>
+                <li><a href="procurar.php">Recurso</a></li>
               </ul>
             </li>
             </li>
-            <li><a href="blog.html">Painel de Controle</a></li>
-            <li><a href="contatos.html">Contatos</a></li>
+            <li><a href="painelControle.php">Painel de Controle</a></li>
+            <li><a href="contatos.php">Contatos</a></li>
           </ul>
         </nav>
         <div class="clear"></div>

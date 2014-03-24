@@ -89,26 +89,26 @@ $(window).load(
             <li class="current"><a href="index.php">Página Inicial</a></li>
             <li><a href="services.php">Aluguel</a>
               <ul>
-                <li><a href="#">Disponibilizar</a>
+                <li><a href="disponibilizar.php">Disponibilizar</a>
                   <ul>
-                    <li><a href="#">Casa</a></li>
-         	           <li><a href="#">Apartamento</a></li>
-                    <li><a href="#">Recurso</a></li>
+                    <li><a href="disponibilizar.php">Casa</a></li>
+         	           <li><a href="disponibilizar.php">Apartamento</a></li>
+                    <li><a href="disponibilizar.php">Recurso</a></li>
                   </ul>
                 </li>
                 <li><a href="#">Editar</a></li>
                 <li><a href="#">Remover</a></li>
               </ul>
             </li>
-            <li><a href="products.php">Procurar</a>
+            <li><a href="procurar.php">Procurar</a>
             <ul>
-                <li><a href="#">Casa</a>
-                <li><a href="#">Apartamento</a></li>
-                <li><a href="#">Recurso</a></li>
+                <li><a href="procurar.php">Casa</a>
+                <li><a href="procurar.php">Apartamento</a></li>
+                <li><a href="procurar.php">Recurso</a></li>
               </ul>
             </li>
             </li>
-            <li><a href="blog.php">Painel de Controle</a></li>
+            <li><a href="painelControle.php">Painel de Controle</a></li>
             <li><a href="contatos.php">Contatos</a></li>
           </ul>
         </nav>
@@ -166,12 +166,12 @@ $(window).load(
         <div class="col1">O Temporadas oferece uma disponíbilidade enorme de imóveis
         em praias, lagos, fazendas... Com locais maravilhosas em todos os cantos do
         do Brasil! No Temporadas você não precisa gastar dinheiro com hotel ou aluguel.</div>
-        <a href="#" class="btn">Mais</a> </div>
+        <a href="procurar.php" class="btn">Mais</a> </div>
       <div class="grid_3">
         <h3>Serviços</h3>
         <div class="col1">Se você deseja algum tipo serviço, tal como, Artes Gráficas, desenvolvedores, consultores, corretores... No Temporadas agora tem! Use suas moedas
         para pedir algum serviço no Temporadas! </div>
-        <a href="#" class="btn">Mais</a> </div>
+        <a href="procurar.php" class="btn">Mais</a> </div>
       <div class="clear"></div>
     </div>
   </div>
@@ -185,7 +185,7 @@ $(window).load(
           Doe seu imóvel ou serviço por algum tempo para alguém no Temporadas para ganhar Moedas.
           Com mais Moedas você pode abrir seu leque de possibilidades.
           Saiba mais sobre o funcionamento do Temporadas clicando em Mais <br>
-          <a href="#" class="btn">Mais</a> </div>
+          <a href="sobre.php" class="btn">Mais</a> </div>
       </div>
       <div class="grid_4 prefix_1">
         <h3>Mais Populares</h3>
@@ -216,29 +216,26 @@ $(window).load(
     </div>
     <div class="grid_2">
       <ul>
-        <li><a href="#">Contato</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Legislação</a></li>
-        <li><a href="#">Termos e Condições</a></li>
-        <li><a href="#">Sobre Nós</a></li>
+        <li><a href="contatos.php">Contato</a></li>
+        <li><a href="sobre.php">Sobre</a></li>
+        <li><a href="sobre.php">Legislação</a></li>
+        <li><a href="sobre.php">Termos e Condições</a></li>
+        <li><a href="contatos.php">Sobre Nós</a></li>
       </ul>
     </div>
     
     <div id="grid_3prefix_1">
       <h4>Cadastre seu E-mail</h4>
-      <form id="newsletter" action="#">
+      <form id="newsletter" action="login.php">
         <div class="success">Seu pedido de cadastro foi enviado!</div>
         <label class="email"> <span>Entre com seu E-mail:</span>
           <input type="email" value="" >
-          <a href="#" class="btn" data-type="submit">Inscreva-se</a> <span class="error">*E-mail inválido.</span> </label>
+          <a href="login.php" class="btn" data-type="submit">Inscreva-se</a> <span class="error">*E-mail inválido.</span> </label>
       </form>
     </div>
     <div class="clear"></div>
   </div>
   <div class="f_bot">
-    <div class="container_12">
-      <div class="grid_12">Design by: <a href="http://jordanlira.zz.mu/">jordanlira.zz.mu</a></div>
-    </div>
   </div>
 </footer>
 </body>
