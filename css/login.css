@@ -124,11 +124,18 @@ table {
 
 #slick-login {
 	width: 220px;
-	height: 155px;
+	height: 225px;
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	margin-left: -110px;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	padding-left:15px ;
+	padding-right:15px;
+	border: 0px;
+	background: white;
 
 	-webkit-animation: login 1s ease-in-out;
 	-moz-animation: login 1s ease-in-out;
