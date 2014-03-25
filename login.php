@@ -77,7 +77,7 @@
                 <label for="username">username</label><input type="text" name="username" class="placeholder" placeholder="E-mail">
                 <label for="password">password</label><input type="password" name="password" class="placeholder" placeholder="Senha">
                 <input type="submit" value="Entrar">
-                <input type="button" href="cadastro.html" value="Cadastrar">
+                <a type="button" href="cadastro.php">Cadastrar</a>
               </form>
             </div>
             <div class="clear"></div>
@@ -98,11 +98,6 @@
               </ul>
             </div>
             <div class="clear"></div>
-          </div>
-          <div class="f_bot">
-            <div class="container_12">
-              <div class="grid_12">Design by: <a href="http://jordanlira.zz.mu/">jordanlira.zz.mu</a></div>
-            </div>
           </div>
         </footer>
       </body>

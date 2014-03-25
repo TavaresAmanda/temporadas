@@ -1,46 +1,28 @@
-<?php
-//Verifico se o arquivo existe
-if(file_exists("init.php")) {
-	require "init.php";		
-} else {
-	echo "Arquivo init.php nao foi encontrado";
-	exit;
-}
-//verifico se a função que eu criei existe, vai que alguem pegou meu script e apagou ela = )
-if(!function_exists("Abre_Conexao")) {
-	echo "Erro o arquivo init.php foi auterado, nao existe a função Abre_Conexao";
-	exit;
-}
-
-Abre_Conexao();
-//verifico se nao deu erro de mysql
-if(mysql_errno() != 0) {
-                //verifico se a $errros existe, mesma coisa vai que alguem meche no script e apagou ela
-	if(!isset($erros)) {
-		echo "Erro o arquivo init.php foi auterado, nao existe \$erros";
-		exit;
-	}
-	echo $erros[mysql_errno()];
-	exit;
-}	
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-  <title>Cadastro</title>
-  <style>
-    <!--
-    .textBox { border:1px solid gray; width:200px;} 
-  -->
-</style>
+  <title>Temporadas | Cadastro</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-migrate-1.1.1.js"></script>
+  <script src="js/superfish.js"></script>
+  <script src="js/sForm.js"></script>
+  <script src="js/jquery.equalheights.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/tms-0.4.1.js"></script>
+  <script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+  <script src="js/jquery.touchSwipe.min.js"></script>
 </head>
-<body>
+<body class="page1">
   <header>
     <div class="container_12">
       <div class="grid_12">
         <div class="h_phone">Alguma ajuda? Ligue para (83) 81014213</div>
-        <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+        <h1><a href="index.php"><img src="images/logo.png" alt=""></a></h1>
         <div class="clear"></div>
       </div>
       <div class="clear"></div>
@@ -48,73 +30,78 @@ if(mysql_errno() != 0) {
     <div class="menu_block">
       <div class="container_12">
         <div class="grid_12">
-          <div class="socials"><a href="login.html"></a><a href="login.html"></a></div>
-          <div class="autor"> <a href="login.html">Entrar</a> Social </div>
-          <nav class="">
-            <ul class="sf-menu">
-              <li class="current"><a href="index.html">Página Inicial</a></li>
-              <li><a href="services.html">Aluguel</a>
-                <ul>
-                  <li><a href="#">Disponibilizar</a>
-                    <ul>
-                      <li><a href="#">Casa</a></li>
-                      <li><a href="#">Apartamento</a></li>
-                      <li><a href="#">Recurso</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Editar</a></li>
-                  <li><a href="#">Remover</a></li>
-                </ul>
-              </li>
-              <li><a href="products.html">Procurar</a>
-                <ul>
-                  <li><a href="#">Casa</a>
-                    <li><a href="#">Apartamento</a></li>
-                    <li><a href="#">Recurso</a></li>
+          <div class="socials"><a href="login.php"></a><a href="login.php"></a></div>
+          <div class="autor">
+            <a href="login.php"> Entrar </a> Social </div>
+            <nav class="">
+              <ul class="sf-menu">
+                <li><a href="index.php">Página Inicial</a></li>
+                <li><a href="services.php">Aluguel</a>
+                  <ul>
+                    <li><a href="disponibilizar.php">Disponibilizar</a>
+                      <ul>
+                        <li><a href="disponibilizar.php">Casa</a></li>
+                        <li><a href="disponibilizar.php">Apartamento</a></li>
+                        <li><a href="disponibilizar.php">Recurso</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Editar</a></li>
+                    <li><a href="#">Remover</a></li>
                   </ul>
                 </li>
-              </li>
-              <li><a href="blog.html">Painel de Controle</a></li>
-              <li><a href="contatos.html">Contatos</a></li>
-            </ul>
-          </nav>
+                <li><a href="procurar.php">Procurar</a>
+                  <ul>
+                    <li><a href="procurar.php">Casa</a>
+                      <li><a href="procurar.php">Apartamento</a></li>
+                      <li><a href="procurar.php">Recurso</a></li>
+                    </ul>
+                  </li>
+                </li>
+                <li class="current"><a href="painelControle.php">Painel de Controle</a></li>
+                <li><a href="contatos.php">Contatos</a></li>
+              </ul>
+            </nav>
+            <div class="clear"></div>
+          </div>
           <div class="clear"></div>
         </div>
-        <div class="clear"></div>
       </div>
-    </div>
-  </header>
-  <form id="form1" name="form1" method="post" action="salvar.php">
-    <table width="400" border="0" align="center">
-      <tr>
-        <td width="145">Nome</td>
-        <td width="245"><input name="nome" type="text" id="nome" maxlength="45" class="textBox" /></td>
-      </tr>
-      <tr>
-        <td>Email</td>
-        <td><input name="email" type="text" id="email" maxlength="64" class="textBox" /></td>
-      </tr>
-      <tr>
-        <td>Cidade</td>
-        <td><input name="cidade" type="text" id="cidade" maxlength="45" class="textBox" /></td>
-      </tr>
-      <tr>
-        <td>Estado</td>
-        <td><select name="estados" id="estados" class="textBox" >	  	
-        </tr>
-        <tr>
-          <td>Login</td>
-          <td><input name="login" type="text" id="login" maxlength="40" class="textBox" /></td>
-        </tr>
-        <tr>
-          <td>Senha</td>
-          <td><input name="senha" type="password" id="senha" maxlength="10" class="textBox" /></td>
-        </tr>
-        <tr>
-          <td> </td>
-          <td><input type="submit" name="Submit" value="Salvar" style="cursor:pointer;" /></td>
-        </tr>
-      </table>
-    </form>
-  </body>
-  </html></div>
+    </header>
+    <div class="content">
+      <div class="black">
+        <div class="page1_block">
+          <div class="container_12">
+            <div class="grid_12">
+              <div id="container">
+              <form id="slick-login" name="form1" method="post" action="salvar.php">
+                  Nome:<input name="nome" type="text" id="nome" maxlength="45" class="placeholder" />
+                  Email:<input name="email" type="text" id="email" maxlength="64" class="placeholder" />
+                  Cidade:<input name="cidade" type="text" id="cidade" maxlength="45" class="placeholder" />
+                  Estado:<select name="estados" id="estados" class="placeholder" >     
+                  Login:<input name="login" type="text" id="login" maxlength="40" class="placeholder"/>
+                  Senha:<input name="senha" type="password" id="senha" maxlength="10" class="placeholder" />
+                  <input type="submit" name="Submit" value="Salvar" style="cursor:pointer;"/>
+                </form>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+          <footer>
+            <div class="container_12">
+              <div class="grid_2">
+                <div class="copy"> <a href="index.html" class="footer_logo"><img src="images/footer_logo.png" alt=""></a> &copy; 2014 <a href="#">Privacy Policy</a> </div>
+              </div>
+              <div class="grid_2">
+                <ul>
+                  <li><a href="#">Contato</a></li>
+                  <li><a href="#">Sobre</a></li>
+                  <li><a href="#">Legislação</a></li>
+                  <li><a href="#">Termos e Condições</a></li>
+                  <li><a href="#">Sobre Nós</a></li>
+                </ul>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </footer>
+        </body>
+        </html>
